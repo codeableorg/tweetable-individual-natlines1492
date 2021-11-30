@@ -1,29 +1,29 @@
-class CommentPolicy < ApplicationPolicy
-  class Scope < Scope
-    def resolve
-      scope.all
-    end
-  end
+# class CommentPolicy < ApplicationPolicy
+#   class Scope < Scope
+#     def resolve
+#       scope.all
+#     end
+#   end
 
-  def update?
-    owner? || admin?
-  end
+#   def update?
+#     owner? || admin?
+#   end
 
-  def destroy?
-    owner? || admin?
-  end
+#   def destroy?
+#     owner? || admin?
+#   end
 
-  def create?
-    user
-  end
+#   def create?
+#     user
+#   end
 
-  private
+#   private
 
-  def owner?
-    @user == @record.user
-  end
+#   def owner?
+#     @user == @record.user
+#   end
 
-  def admin?
-    @user.role == 'admin'
-  end
-end
+#   def admin?
+#     @user.role == 'admin'
+#   end
+# end
