@@ -1,0 +1,13 @@
+<div class="form border">
+  <div class="img-tweet">
+    <%= current_user.avatar.attached? ? image_tag(current_user.avatar) : image_tag("Imageanonymus.png") %>
+  </div>
+  <%= form_with model: [@tweet, @comment], local: true do |form| %>
+    <div class="input__container flex-col">
+      <%= form.text_area :body, placeholder: "Remember to think before write...", class:'input__content'%>
+      <div class="cta__button-input">
+        <%= form.submit "Comment", class: "btn btn--small" %>
+      </div>
+    </div>
+  <% end %>
+</div>

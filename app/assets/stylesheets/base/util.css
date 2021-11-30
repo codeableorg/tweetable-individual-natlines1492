@@ -1,0 +1,29 @@
+
+/* Font colors */
+
+.gray-300 {
+  color: var(--gray-300);
+}
+
+/* Margins */
+
+.mb-16-left {
+  margin-left: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+/* Text styling */
+.text-left {
+  text-align: left;
+}
+
+.img-tweet {
+  min-width:50px;
+  max-width: 50px;
+  height:50px;
+  border-radius:25px;
+  overflow: hidden;
+}

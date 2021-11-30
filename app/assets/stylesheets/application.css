@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+ @import "./global.css";
+ @import "./components/button.css";
+ @import "./components/cta.css";
+ @import "./components/icon.css";
+ @import "./components/navbar.css";
+ @import "./components/input.css";
+ @import "./components/forms.css";
+ @import "./components/flash.css";
+ 
+ 
+ body {
+   background-color: var(--gray-100);
+ }
+
+ form {
+   width: 80%;
+   margin-left: 10%;
+ }
